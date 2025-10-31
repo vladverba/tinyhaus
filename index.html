@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinyHaus</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+        background-color: #f5f5f5;
+        color: #1a1a1a;
+        line-height: 1.3;
+      }
+
+      .container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 80px 40px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 60px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background-color: #2d2d2d;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+      }
+
+      .hero {
+        max-width: 800px;
+        margin-bottom: 60px;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #1a1a1a;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+        line-height: 1.4;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        width: 150px;
+        justify-content: center;
+      }
+
+      .btn-primary {
+        background-color: #2d2d2d;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #1a1a1a;
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary {
+        background-color: #e0e0e0;
+        color: #2d2d2d;
+      }
+
+      .btn-secondary:hover {
+        background-color: #d0d0d0;
+      }
+
+      .section {
+        max-width: 800px;
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 32px;
+        color: #1a1a1a;
+      }
+
+      .feature {
+        margin-bottom: 28px;
+      }
+
+      .feature-title {
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 8px;
+        font-size: 17px;
+      }
+
+      .feature-description {
+        color: #666;
+        font-size: 14px;
+        /* line-height: 1.4; */
+      }
+
+      .calendar-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 40px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>TinyHaus</span>
+      </div>
+
+      <section class="hero">
+        <h1>Data infrastructure for growing companies</h1>
+        <p class="subtitle">
+          API integrations, ETL pipelines, data warehouse setup, and BI
+          dashboards for companies that need to move fast. No data team
+          required.
+        </p>
+        <div class="cta-buttons">
+          <button
+            class="btn btn-primary"
+            onclick="window.location.href='#pricing'"
+          >
+            See pricing
+          </button>
+          <a href="https://cal.com/verba/30min">
+            <button class="btn btn-secondary">
+              <svg
+                class="calendar-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Book a call
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>From disconnected tools to unified data</h2>
+
+        <div class="feature">
+          <div class="feature-title">All the connections you need.</div>
+          <div class="feature-description">
+            API integrations with your CRM, payment processors, marketing tools,
+            and any other systems powering your business. Everything flows into
+            one place.
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-title">Built to scale.</div>
+          <div class="feature-description">
+            We design ETL pipelines and data warehouses using proven
+            technologies that handle growing data volumes without breaking.
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-title">Dashboards that actually get used.</div>
+          <div class="feature-description">
+            Connect your data warehouse to Tableau, Looker, or Power BI. We
+            build the views your team needs to make decisions, not just pretty
+            charts.
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-title">Fast turnaround.</div>
+          <div class="feature-description">
+            Most projects delivered in 2-4 weeks. No six-month implementations
+            or endless scoping calls. We move at startup speed.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <h2>Fixed price with no hidden costs</h2>
+        <div class="feature-title">$3,999/month</div>
+
+        <div class="feature">
+          <div class="feature-description">
+            • Discovery and data source audit. <br />
+            • Custom API integrations.
+            <br />
+            • ETL pipeline development. <br />
+            • Data warehouse setup and configuration. <br />
+            • BI dashboard creation (Tableau, Looker, or Power BI). <br />
+            • Documentation and architecture diagrams. <br />
+            • Deployment and team training. <br />
+          </div>
+        </div>
+
+        <a href="https://cal.com/verba/30min">
+          <button class="btn btn-secondary">
+            <svg class="calendar-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Book a call
+          </button>
+        </a>
+      </section>
+
+      <section class="section">
+        <h2>How TinyHaus was born</h2>
+
+        <div class="feature">
+          <div class="feature-description">
+            <p>
+              I'm
+              <a
+                href="https://x.com/vladverba"
+                target="_blank"
+                style="color: #2d2d2d; text-decoration: underline"
+                >Vlad</a
+              >, and I was an early employee at a media company with millions of
+              newsletter subscribers as a PM. Within weeks, I was drowning in
+              data requests. Editorial wanted engagement metrics. The business
+              team needed subscriber analytics. Marketing couldn't track
+              campaign performance. Everyone was exporting CSVs manually and
+              piecing together reports in Google Sheets.
+            </p>
+
+            <br />
+
+            <p>
+              It was chaos. We were spending hours every week on ad-hoc
+              requests, decisions were delayed, and nothing was reliable.
+            </p>
+
+            <br />
+
+            <p>
+              So I built the solution myself. API integrations to pull data from
+              our email platform, CRM, and content systems. ETL pipelines to
+              process millions of subscriber actions daily. A data warehouse to
+              centralize everything. Dashboards that updated automatically.
+            </p>
+
+            <br />
+
+            <p>
+              Then it grew. Internal tools for the editorial team. Third-party
+              integrations with ad platforms. Events data tracking. The system
+              scaled from newsletter analytics to powering decisions across the
+              entire company.
+            </p>
+
+            <br />
+
+            <p>
+              The impact was massive. Leadership could see real-time
+              performance. We stopped wasting engineering hours on one-off
+              reports. And we did it without hiring a full data team or waiting
+              months for consultants.
+            </p>
+
+            <br />
+
+            <p>
+              That's when I realized: so many growing companies hit this same
+              wall. TinyHaus builds exactly what you need - no over-engineering,
+              no missing pieces. Just clean data infrastructure that works.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
